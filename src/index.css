@@ -1,0 +1,19 @@
+@font-face {
+  font-family: PlateletRegular;
+  src: url(../fonts/Platelet_Regular.ttf) format('truetype');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: PlateletRegular;
+}
+
+html {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
