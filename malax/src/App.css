@@ -1,0 +1,170 @@
+.Layer {
+  background-color: #283655;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index:-1000;
+}
+
+.Background {
+  background:url('./modules/background/movingstars.svg');
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 300%;
+  animation: slideshow 150s linear infinite;
+}
+
+@keyframes slideshow {
+  0%    { left: 0; }
+  100%  { left: -200%; }
+}
+
+.App {
+  text-align: center;
+  height: 100%;
+}
+
+.App-logo {
+  position: fixed;
+  top: 20px;
+  left: 36px;
+  height: 70px;
+}
+
+.App-header {
+  padding-right: 40px;
+  background: #283655;
+  height: 71px;
+  text-align: right;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.NavbarButton {
+  border: 0px;
+  background: transparent;
+  color: white;
+  padding:10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size:14px;
+  border-radius: 4px;
+  font-family: PlateletRegular;
+  cursor: pointer
+}
+
+.NavbarLine {
+  border-bottom: 1px solid white;
+  margin-left: 160px;
+  margin-top: 7px;
+}
+
+.Main {
+  height:100%;
+  width:100%;
+  padding-top: 120px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+}
+
+.Login {
+  height:100%;
+  width:100%;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.LoginButton {
+  padding: 10px;
+  margin-top: 30px;
+  background: orangered;
+  border: 0px;
+  color: white;
+  font-size: 14px;
+  border-radius: 20px;
+  width: 150px;
+  font-size: 1.7rem;
+  font-family: PlateletRegular;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.LoginButton:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.ButtonWrapper {
+  height: 250px;
+  width: 250px;
+  padding:10px;
+  margin: 20px;
+  transition: 0.3s;
+}
+
+.Button {
+  height: 100%;
+  width: 100%;
+  background-color: #283655;
+  border: 0px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.Label {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.ButtonWrapper:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.Lightbox {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Lightbox:after{
+    content:'';
+    background:black;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:0.9;
+    z-index: 0;
+
+}
+
+.Cesium {
+  position: absolute;
+  z-index: 100;
+  width:100%
+}
+
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 250ms ease-in;
+}
