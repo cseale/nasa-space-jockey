@@ -6,7 +6,7 @@ class Cesium extends React.Component {
             <div className="Lightbox">
                 <div className="Cesium">
                     <iframe 
-                        src="https://space-cowboys.glitch.me/" 
+                        src="https://space-cowboys-sat-view.glitch.me/" 
                         width="800" 
                         height="600"></iframe>
                 </div>

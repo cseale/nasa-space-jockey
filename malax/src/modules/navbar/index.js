@@ -7,8 +7,8 @@ class Navbar extends React.Component {
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <button className="NavbarButton">Malax</button>
-          <button className="NavbarButton">Sign Up</button>
-          <button className="NavbarButton">Login</button>
+          {/*<button className="NavbarButton">Sign Up</button>
+          <button className="NavbarButton">Login</button>*/}
           <div className="NavbarLine"></div>
         </div>
         )
