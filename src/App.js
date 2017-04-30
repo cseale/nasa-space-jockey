@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Navbar from './modules/navbar';
+import Augmented from './modules/augmented';
 import Background from './modules/background';
 import MainPage from './modules/main';
 import Cesium from './modules/cesium';
@@ -34,6 +34,7 @@ class App extends Component {
           <Home>        
             <Route exact path="/" component={MainPage}/>
             <Route path="/cesium" component={Cesium}/>
+            <Route path="/augmented" component={Augmented}/>
           </Home>          
         </div>
       </Router>

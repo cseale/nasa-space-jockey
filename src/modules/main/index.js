@@ -12,7 +12,7 @@ class Main extends React.Component {
             <div>
                 <Navbar />  
                 <div className="Main">
-                    <Link to="/cesium">  
+                    <Link to="/augmented">  
                         <Button text="Augmented Reality" src={telescopebutton}></Button>
                     </Link>
                     <Link to="/cesium">
