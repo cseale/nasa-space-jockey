@@ -4,11 +4,11 @@
   "private": true,
   "dependencies": {
     "cesium": "^1.32.1",
-    "http-server": "^0.9.0",
     "react": "^15.5.4",
     "react-addons-css-transition-group": "^15.5.2",
     "react-dom": "^15.5.4",
-    "react-router-dom": "^4.1.1"
+    "react-router-dom": "^4.1.1",
+    "serve": "^5.1.4"
   },
   "devDependencies": {
     "autoprefixer": "6.7.2",
@@ -52,7 +52,7 @@
     "whatwg-fetch": "2.0.2"
   },
   "scripts": {
-    "start": "./node_modules/.bin/http-server",
+    "start": "./node_modules/.bin/serve -s build",
     "dev": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom"
