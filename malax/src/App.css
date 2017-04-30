@@ -15,7 +15,7 @@
   top: 0;
   height: 100%;
   width: 300%;
-  animation: slideshow 150s linear infinite;
+  animation: slideshow 200s linear infinite;
 }
 
 @keyframes slideshow {
@@ -55,7 +55,6 @@
   margin-left: 10px;
   font-size:14px;
   border-radius: 4px;
-  font-family: PlateletRegular;
   cursor: pointer
 }
 
